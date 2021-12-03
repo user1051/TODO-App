@@ -5,12 +5,11 @@
 }
 body {
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	height: 100%;
-	background: #000;
+	height: 100vh;
 }
 .header__section {
 	display: flex;
@@ -26,47 +25,123 @@ body {
 }
 .header__section span {
 	font-weight: 600;
-	color: red;
+	color: #160202;
 }
 .header__section p {
 	font-size: 2em;
-	color: #fff;
 }
 .fa {
-	color: red !important;
+	color: #ff2b2b !important;
 	cursor: pointer;
 }
 .cards__section {
 	display: flex;
 	color: #fff;
 }
+a {
+	text-decoration: none;
+	color: transparent;
+}
 .card {
 	width: 180px;
 	height: 280px;
-	background: #eeeeee;
 	text-align: center;
 	border-radius: 20px;
-	box-shadow: 10px 10px 5px red;
+	box-shadow: 5px 5px 10px #585858;
 	margin: 20px;
 	padding: 15px;
+	border: 2px solid #ff2b2b;
 }
 .card h2 {
-	color: red;
+	color: #ff2b2b;
 	font-weight: 400;
 	font-size: 1.4em;
 }
 .card p {
 	margin: 40px 0;
-	color: green;
+	color: red;
 	font-weight: 600;
 	text-decoration: line-through;
 	font-size: 1.2em;
 }
 .card label {
-	color: red;
+	color: #000;
 	cursor: pointer;
 }
+.title {
+	position: relative;
+	/* margin-top: -100px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+}
 
+.title h1 {
+	padding: 0 25px;
+	font-size: 4em;
+	font-weight: 600;
+	color: #2e2020;
+	background-color: #fff;
+	text-align: center;
+}
+.line {
+	position: absolute;
+	top: 50%;
+	width: 900px;
+	height: 5px;
+	background-color: #8a8a8a;
+	z-index: -1;
+	border-radius: 10px;
+}
+.icon {
+	font-size: 2em;
+}
+.task__card {
+	position: relative;
+	width: 280px;
+	margin-top: 50px;
+}
+.task__card .fa {
+	position: absolute;
+	bottom: 20px;
+	right: 15px;
+	font-size: 2em;
+}
+
+.add__list {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	height: 120px;
+	width: 300px;
+	border: 1px solid #ff2b2b;
+	border-radius: 10px;
+	text-align: center;
+	color: #ff2b2b;
+}
+.add__list input {
+	margin: 15px 0;
+	border: 1px solid #ff2b2b;
+	outline: none;
+	padding: 8px;
+	border-radius: 5px;
+}
+.add__list h2 {
+	font-weight: 400;
+}
+.btn {
+	background: #ff2b2b;
+	color: #fff;
+	border: none;
+	border-radius: 20px;
+	width: 100px;
+	cursor: pointer;
+	margin: auto;
+	padding: 12px;
+}
 @media (max-width: 768px) {
 	.cards__section {
 		flex-direction: column;

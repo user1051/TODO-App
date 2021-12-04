@@ -103,12 +103,35 @@ a {
 	position: relative;
 	width: 280px;
 	margin-top: 50px;
+	height: 280px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px #585858;
+	margin: 20px;
+	padding: 15px;
+	border: 2px solid #ff2b2b;
 }
 .task__card .fa {
 	position: absolute;
 	bottom: 20px;
 	right: 15px;
 	font-size: 2em;
+}
+.task__card h2 {
+	color: #ff2b2b;
+	font-weight: 400;
+	font-size: 1.4em;
+}
+.task__cardInfo p {
+	margin: 40px 0;
+	color: red;
+	font-weight: 600;
+	text-decoration: line-through;
+	font-size: 1.2em;
+}
+.task__card label {
+	color: #000;
+	cursor: pointer;
 }
 
 .add__list {
@@ -122,11 +145,13 @@ a {
 	text-align: center;
 	color: #ff2b2b;
 	background: #fff;
+	box-shadow: 6px 6px 10px #949494;
 }
 .add__list input {
 	margin: 15px 0;
 	border: 1px solid #ff2b2b;
 	outline: none;
+	box-shadow: 2px 2px 5px #949494;
 	padding: 8px;
 	border-radius: 5px;
 }
@@ -155,13 +180,34 @@ a {
 	.card__info {
 		display: none;
 	}
-	hr {
+	hr,
+	.line,
+	.icon span {
 		display: none;
 	}
 	.header__section h1 {
 		font-size: 3em;
 	}
 	.header__section p {
-		font-size: 1.5em;
+		font-size: 2.5em;
+		margin-right: -40px;
+	}
+	.header__section .add {
+		display: none;
+	}
+	.task__card {
+		height: 50%;
+	}
+	.task__card hr {
+		display: block;
+	}
+	.title h1 {
+		font-size: 2.5em;
+	}
+	.icon {
+		position: absolute;
+		left: 5%;
+		top: 50px;
+		font-size: 2.5em;
 	}
 }

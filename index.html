@@ -12,51 +12,37 @@
 			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 			crossorigin="anonymous"
 		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 	<body>
 		<div class="header__section">
 			<h1><span>Tasks</span> Lists</h1>
 			<p>
-				<a href="addList.html"
-					><i class="fa fa-plus-circle" aria-hidden="true"></i
-				></a>
+				<!-- <a href="addList.html"
+					> -->
+				<i class="fa fa-plus-circle popListBtn" aria-hidden="true"></i>
+				<!-- </a> -->
 				<span class="add">Add List</span>
 			</p>
 		</div>
-		<div class="cards__section">
-			<a href="task.html">
-				<div class="card">
-					<h2>Trip to Paris</h2>
-					<hr />
-					<div class="card__info">
-						<p>completed task</p>
-						<input type="checkbox" name="pending_task" id="task1" />
-						<label for="task1">pending task</label>
-					</div>
-				</div>
-			</a>
-			<a href="task.html">
-				<div class="card">
-					<h2>My Todo List</h2>
-					<hr />
-					<div class="card__info">
-						<p>completed task</p>
-						<input type="checkbox" name="pending_task" id="task2" />
-						<label for="task2">pending task</label>
-					</div>
-				</div>
-			</a>
-			<a href="task.html">
-				<div class="card">
-					<h2>My Todo List</h2>
-					<hr />
-					<div class="card__info">
-						<p>completed task</p>
-						<input type="checkbox" name="pending_task" id="task3" />
-						<label for="task3">pending task</label>
-					</div>
-				</div>
-			</a>
+		<div class="empty">
+			<h2 class=>No Items in the ToDo List ❕ click on ➕ icon to add some </h2>
 		</div>
+		<div id="cards__section"></div>
+
+		<div class="add__list" id="addList">
+			<i class="fa fa-times closeBtn"></i>
+			<h2>Add New List</h2>
+			<input type="text" id="listName" />
+			<button class="btn" onclick="addTask()">ADD</button>
+		</div>
+		<div class="add__list" id="addItem">
+			<i class="fa fa-times closeBtn"></i>
+			<h2>Add Item</h2>
+			<input type="text" id="itemName" />
+			<button class="btn" onclick="createItem()">ADD</button>
+		</div>
+
+		<script src="./index.js"></script>
 	</body>
 </html>
